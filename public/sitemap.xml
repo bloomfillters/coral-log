@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://example.org/guides/</loc>
+    <lastmod>2024-02-13T14:25:39-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/guides/softshark/</loc>
+    <lastmod>2024-02-13T14:25:39-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/guides/rust-investigations/</loc>
+    <lastmod>2024-02-13T14:25:09-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/guides/jolly-roger/</loc>
+    <lastmod>2024-02-13T14:11:05-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/</loc>
+    <lastmod>2024-02-13T13:44:44-05:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/</loc>
+  </url><url>
+    <loc>http://example.org/tags/</loc>
+  </url>
+</urlset>
