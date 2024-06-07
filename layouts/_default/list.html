@@ -4,27 +4,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><^>{{ .Site.Title }}</title>
-    <link rel="stylesheet" href="/style.css">
+    {{ $css := resources.Get "css/style.css" }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen">
   </head>
   <body>
 
     <header>
-      <h1>{{ .Site.Title }}</h1>
+      <h1 class="header-align-class"><a href="/" class="header-align-anchor">💜 🪸</a></h1>
     </header>
     
     <main>
-      <h2>{{ .Title }}</h2>
-      {{ .Content }}
 
-      <ul>
+      <ul class="no-bullets">
         {{ range .Pages }}
-          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          <li>
+            <div class="topbar">▼ {{ .Date | time.Format ":date_short"}} {{ .Params.Emoji }}</div>
+            <div class="listcore">
+            <a href="{{ .RelPermalink }}" class="listie">💿</a> {{ .Title }}
+            </div>
+          </li>
         {{ end }}
       </ul>
     </main>
 
     <footer>
-      <small>made with the songs of the undersea isopods</small>
+      <small>made with the songs of the undersea isopods. <a href="/">return home</a> </small>
     </footer>
   </body>
 </html>

@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><^>{{ .Site.Title }}</title>
-    <link rel="stylesheet" href="/style.css">
+    {{ $css := resources.Get "css/style.css" }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" type="text/css" media="screen">
   </head>
   <body>
 
@@ -14,11 +15,18 @@
     
     <main>
       <h2>{{ .Title }}</h2>
+      <div class="topbar">
+        💧 coral-log/home
+      </div>
+      <div class="core">
       {{ .Content }}
+      </div>
+      <a href="/guides/" class="listie">💿 access disk 𓍢ִ໋🌷͙֒</a>
     </main>
 
     <footer>
-      <small>made with the songs of the undersea isopods</small>
     </footer>
   </body>
 </html>
+
+
